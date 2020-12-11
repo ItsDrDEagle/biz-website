@@ -19,6 +19,11 @@ $(document).ready(function(){
             scrollTop: $("#o-nama").offset().top},
             'slow');
     });
+    $("#kontaktBtn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#kontakt").offset().top},
+            'slow');
+    });
 
 
 });

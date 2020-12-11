@@ -11,7 +11,8 @@
 }
 
 // varijable
-$primary-font-color: #565656;
+$primary-font-color:black;
+$secondary-font-color: white;
 $bg-color: #f0f5f3;
 $nav-btn-shadow-color: rgba(255, 255, 255, 0.3);
 $nav-btn-shadow-color2: rgba(51, 51, 51, 0.12);
@@ -141,7 +142,7 @@ $accent-font: "Caviar Dreams Bold";
     transition-timing-function: ease-out;
   }
   .hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
-    color: white;
+    color: $secondary-font-color;
   }
   .hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
     -webkit-transform: scaleX(0);
@@ -244,18 +245,21 @@ header {
             }
             &:hover {
                 background-color:$bg-color-accent;
-                color: white;
+                color: $secondary-font-color;
             }
         }
     }
     #kontakt {
         font-family: $primary-font;
         width: 100vw;
+        height: 70vh;
         background: $bg-color-accent;
         padding-bottom: 50px;
+
         #kontaktirajte {
-            padding-top: 15px;
+            padding-top: 50px;
             text-align: center;
+            color: $secondary-font-color;
         }
         .inputs {
             text-align: center;
@@ -268,7 +272,7 @@ header {
                 border-top-right-radius: 10px;
                 border-bottom: solid 2px #474544;
                 margin: -0.512em auto;
-
+                padding-left: 10px;
                 &:focus {
                     outline: none;
 
@@ -277,9 +281,17 @@ header {
             input[type=submit] {
                 width: 30%;
                 height: 30px;
+                font-family: $accent-font;
+                color: $primary-font-color;
                 &:hover, &:focus {
                     cursor: pointer;
-
+                    color: $secondary-font-color;
+                    background-color: #66ff66;
+                    
+                    -webkit-transition-property: color, background-color;
+                    transition-property: color, background-color;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
                 }
             }
             textarea {
@@ -289,14 +301,15 @@ header {
                 resize: none;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
-                border-bottom: solid 2px #474544;
-
+                border-bottom: solid 2px $primary-font-color;
+                padding-left: 10px;
+                padding-top: 5px;
                 &:focus {
                     outline: none;
                 }
             }
             label {
-                margin-bottom: 20px;
+                color: $secondary-font-color;
             }
         }
     }
@@ -312,4 +325,11 @@ header {
 
 }
 }
-
+#footer {
+    text-align: center;
+    background: $bg-color-accent;
+    height: 5vh;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}

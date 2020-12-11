@@ -241,12 +241,14 @@ header div button:hover, header div button:active {
 #main-content #kontakt {
   font-family: "Caviar Dreams";
   width: 100vw;
+  height: 70vh;
   background: #2098D1;
   padding-bottom: 50px;
 }
 #main-content #kontakt #kontaktirajte {
-  padding-top: 15px;
+  padding-top: 50px;
   text-align: center;
+  color: white;
 }
 #main-content #kontakt .inputs {
   text-align: center;
@@ -260,6 +262,7 @@ header div button:hover, header div button:active {
   border-top-right-radius: 10px;
   border-bottom: solid 2px #474544;
   margin: -0.512em auto;
+  padding-left: 10px;
 }
 #main-content #kontakt .inputs input:focus {
   outline: none;
@@ -267,9 +270,17 @@ header div button:hover, header div button:active {
 #main-content #kontakt .inputs input[type=submit] {
   width: 30%;
   height: 30px;
+  font-family: "Caviar Dreams Bold";
+  color: black;
 }
 #main-content #kontakt .inputs input[type=submit]:hover, #main-content #kontakt .inputs input[type=submit]:focus {
   cursor: pointer;
+  color: white;
+  background-color: #66ff66;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 #main-content #kontakt .inputs textarea {
   width: 30%;
@@ -278,13 +289,15 @@ header div button:hover, header div button:active {
   resize: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 2px black;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 #main-content #kontakt .inputs textarea:focus {
   outline: none;
 }
 #main-content #kontakt .inputs label {
-  margin-bottom: 20px;
+  color: white;
 }
 #main-content #copyright {
   font-size: 12px;
@@ -293,6 +306,15 @@ header div button:hover, header div button:active {
   height: 20px;
   position: fixed;
   bottom: 0;
+}
+
+#footer {
+  text-align: center;
+  background: #2098D1;
+  height: 5vh;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
