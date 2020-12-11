@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kao neki biznis</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/70aca19d45.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+    <header id="header">
+        <div class="navBtn" id="naslovnaBtn"><button class="hvr-sweep-to-right">Naslovna</button></div>
+        <div class="navBtn" id="uslugeBtn"><button class="hvr-sweep-to-right">Usluge</button></div>
+        <div class="navBtn" id="projektiBtn"><button class="hvr-sweep-to-right">Projekti</button></div>
+        <div class="navBtn" id="oNamaBtn"><button class="hvr-sweep-to-right">O nama</button></div>
+    </header>
+    <div id="main-content">
+        <div id="usluge">
+            <card class="usluga hvr-shutter-in-horizontal">
+                <p class="nazivUsluge">Dizajn web stranica</p>
+                <img src="../images/design.svg" alt="Dizajn web stranica">
+                <p class="opisUsluge">Školovani pojedinci s puno iskustva u radu s web stranicama i raznim klijentima te njihovim zahtjevima.</p>
+                <p class="opisUsluge">Velik broj prethodnih projekata.</p>
+                <p class="opisUsluge">Brza i efikasna isporuka dizajna po Vašim zahtjevima i željama.</p>
+                <p class="cijenaUsluge">Od 600,00 kn</p>
+            </card>
+            <card class="usluga hvr-shutter-in-horizontal">
+                <p class="nazivUsluge">Izrada web stranica</p>
+                <img src="../images/izrada.svg" alt="Izrada web stranica">
+                <p class="opisUsluge">Kvalitetne i optimizirane stranice po Vašim potrebama.</p>
+                <p class="opisUsluge">Velik raspon alata i tehnologija izrade stranica.</p>
+                <p class="opisUsluge">Razni oblici stranica, web shop, portfolio...</p>
+                <p class="cijenaUsluge">Od 1.500,00 kn</p>
+            </card>
+            <card class="usluga hvr-shutter-in-horizontal">
+                <p class="nazivUsluge">Održavanje web stranica</p>
+                <img src="../images/odrzavanje.svg" alt="Održavanje web stranica">
+                <p class="opisUsluge">Mogućnost održavanja web stranica 24/7 ili po potrebi.</p>
+                <p class="opisUsluge">Dodavanje novih mogućnosti i sličnog.</p>
+                <p class="cijenaUsluge">Od 400,00 kn</p>
+            </card>
+        </div>
+        <div id="o-nama">
+            <card class="zaposlenici hvr-float-shadow">
+                <p class="naziv-zaposlenika">Marcel Bockovac</p>
+                <p class="podrucje">Back End developer</p>
+                <i class="fab fa-php fa-5x"></i>
+            </card>
+            <card class="zaposlenici hvr-float-shadow">
+                <p class="naziv-zaposlenika">Dorian Kovačević</p>
+                <p class="podrucje">Front End developer</p>
+                <i class="fab fa-html5 fa-5x"></i>
+            </card>
+            <card class="zaposlenici hvr-float-shadow">
+                <p class="naziv-zaposlenika">Domagoj Hajduković</p>
+                <p class="podrucje">Grafički dizajner</p>
+                <i class="fas fa-paint-brush fa-5x"></i>
+            </card>
+        </div>
+        <div id="kontakt">
+            <h1 id="kontaktirajte">Javite nam se!</h1>
+
+            <form action="../php/main.php">
+                <div class="inputs">
+                    
+                    <label for="ime">Ime</label><br>
+                    <input type="text" name="ime" required>
+                </div>
+                <div class="inputs">
+                    <label for="prezime">Prezime</label><br>
+                    <input type="text" name="prezime" required>
+                </div>
+                <div class="inputs">
+                    <label for="email">E-mail adresa</label><br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="inputs">
+                    <label for="poruka">Poruka</label><br>
+                    <textarea name="poruka" id="porukaText"></textarea>
+                </div>
+                <div class="inputs">
+                    <input  type="submit" value="Pošalji poruku">
+                </div>
+            </form>
+        </div>
+        
+
+
+
+    </div>
+</body>
+</html>
