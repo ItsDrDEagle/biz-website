@@ -1,7 +1,7 @@
 // fontovi
 @font-face {
     font-family: "Caviar Dreams";
-    src: url(../fonts/CaviarDreams.ttf)
+    src: url(../fonts/CaviarDreams.ttf);
 }
 
 @font-face {
@@ -11,14 +11,14 @@
 }
 
 // varijable
-$primary-font-color:black;
+$primary-font-color: black;
 $secondary-font-color: white;
 $bg-color: #f0f5f3;
 $nav-btn-shadow-color: rgba(255, 255, 255, 0.3);
 $nav-btn-shadow-color2: rgba(51, 51, 51, 0.12);
 $nav-btn-shadow-color-active: rgba(255, 255, 255, 0.5);
 $nav-btn-shadow-color2-active: rgba(51, 51, 51, 0.05);
-$bg-color-accent:#2098D1;
+$bg-color-accent: #2098d1;
 $bg-secondary-color: #e1f4f3;
 $primary-font: "Caviar Dreams";
 $accent-font: "Caviar Dreams Bold";
@@ -36,8 +36,9 @@ $accent-font: "Caviar Dreams Bold";
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-  }
-  .hvr-sweep-to-right:before {
+}
+
+.hvr-sweep-to-right:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -56,14 +57,20 @@ $accent-font: "Caviar Dreams Bold";
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+}
+
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
     color: white;
-  }
-  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+}
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
+}
 
 /* Float Shadow */
 .hvr-float-shadow {
@@ -77,36 +84,49 @@ $accent-font: "Caviar Dreams Bold";
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-float-shadow:before {
+}
+
+.hvr-float-shadow:before {
     pointer-events: none;
     position: absolute;
     z-index: -1;
-    content: '';
+    content: "";
     top: 100%;
     left: 5%;
     height: 10px;
     width: 90%;
     opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(center,
+            ellipse,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0) 80%);
     /* W3C */
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform, opacity;
     transition-property: transform, opacity;
-  }
-  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+}
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     /* move the element up by 5px */
-  }
-  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+}
+
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
     opacity: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-  }
+}
+
 /* Shutter In Horizontal */
 .hvr-shutter-in-horizontal {
     display: inline-block;
@@ -120,8 +140,9 @@ $accent-font: "Caviar Dreams Bold";
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-  }
-  .hvr-shutter-in-horizontal:before {
+}
+
+.hvr-shutter-in-horizontal:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -129,7 +150,7 @@ $accent-font: "Caviar Dreams Bold";
     bottom: 0;
     left: 0;
     right: 0;
-    background:$bg-color;
+    background: $bg-color;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transform-origin: 50%;
@@ -140,16 +161,22 @@ $accent-font: "Caviar Dreams Bold";
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+}
+
+.hvr-shutter-in-horizontal:hover,
+.hvr-shutter-in-horizontal:focus,
+.hvr-shutter-in-horizontal:active {
     color: $secondary-font-color;
-  }
-  .hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+}
+
+.hvr-shutter-in-horizontal:hover:before,
+.hvr-shutter-in-horizontal:focus:before,
+.hvr-shutter-in-horizontal:active:before {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-  }
+}
 
-  /* Bounce In */
+/* Bounce In */
 .hvr-bounce-in {
     display: inline-block;
     vertical-align: middle;
@@ -158,16 +185,20 @@ $accent-font: "Caviar Dreams Bold";
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-  }
-  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  }
+}
 
 // css za stranicu
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -176,11 +207,14 @@ body, html {
     overflow-x: hidden;
     font-family: $primary-font;
 }
+
 header {
-    text-align:center;
+    text-align: center;
     z-index: 10;
+
     div {
         display: inline-block;
+
         button {
             border: none;
             background-color: transparent;
@@ -188,20 +222,22 @@ header {
             height: auto;
             padding: 5px 10px 8px 5px;
             font-size: 20px;
-            
-            &:hover, &:active {
+
+            &:hover,
+            &:active {
                 cursor: pointer;
             }
         }
     }
-
 }
+
 #main-content {
     #usluge {
         height: 60vh;
         width: 100vw;
         margin-top: 50px;
         text-align: center;
+
         .usluga {
             display: inline-block;
             width: 25%;
@@ -210,20 +246,24 @@ header {
             background-color: $bg-color-accent;
             margin-left: 20px;
             margin-right: 20px;
+
             .nazivUsluge {
                 font-size: 25px;
             }
+
             img {
                 width: 15%;
                 height: auto;
             }
         }
     }
+
     #o-nama {
         width: 100vw;
         height: 70vh;
 
         text-align: center;
+
         .zaposlenici {
             display: inline-block;
             width: 20%;
@@ -238,17 +278,19 @@ header {
 
             .naziv-zaposlenika {
                 font-size: 20px;
-                
             }
+
             .podrucje {
                 font-size: 16px;
             }
+
             &:hover {
-                background-color:$bg-color-accent;
+                background-color: $bg-color-accent;
                 color: $secondary-font-color;
             }
         }
     }
+
     #kontakt {
         font-family: $primary-font;
         width: 100vw;
@@ -261,9 +303,11 @@ header {
             text-align: center;
             color: $secondary-font-color;
         }
+
         .inputs {
             text-align: center;
             margin: 15px 0 15px 0;
+
             input {
                 width: 20%;
                 height: 20px;
@@ -273,27 +317,31 @@ header {
                 border-bottom: solid 2px #474544;
                 margin: -0.512em auto;
                 padding-left: 10px;
+
                 &:focus {
                     outline: none;
-
                 }
             }
-            input[type=submit] {
+
+            input[type="submit"] {
                 width: 30%;
                 height: 30px;
                 font-family: $accent-font;
                 color: $primary-font-color;
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     cursor: pointer;
                     color: $secondary-font-color;
                     background-color: #66ff66;
-                    
+
                     -webkit-transition-property: color, background-color;
                     transition-property: color, background-color;
                     -webkit-transition-duration: 0.3s;
                     transition-duration: 0.3s;
                 }
             }
+
             textarea {
                 width: 30%;
                 height: 100px;
@@ -304,10 +352,12 @@ header {
                 border-bottom: solid 2px $primary-font-color;
                 padding-left: 10px;
                 padding-top: 5px;
+
                 &:focus {
                     outline: none;
                 }
             }
+
             label {
                 color: $secondary-font-color;
             }
@@ -315,16 +365,15 @@ header {
     }
 
     #copyright {
-
         font-size: 12px;
         text-align: center;
         width: 100vw;
         height: 20px;
-        position:fixed;
+        position: fixed;
         bottom: 0;
+    }
+}
 
-}
-}
 #footer {
     text-align: center;
     background: $bg-color-accent;
